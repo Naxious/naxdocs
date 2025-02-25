@@ -23,7 +23,10 @@ jobs:
 
           - name: Update reference docs
             run: git submodule update --remote --recursive
-            
+
+          - name: Commit and push changes
+            uses: stefanzweifel/git-auto-commit-action@v5
+
           - name: Publish
             run: |
               git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
