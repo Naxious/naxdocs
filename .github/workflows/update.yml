@@ -19,7 +19,8 @@ jobs:
             submodules: true
             with:
             node-version: '22'
-            run: npm i -g moonwave
+            
+        - run: npm i -g moonwave
 
         - name: Install dependencies
           uses: ok-nick/setup-aftman@v0.4.2
