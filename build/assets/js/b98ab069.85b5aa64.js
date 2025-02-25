@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[808],{4410:s=>{s.exports=JSON.parse('{"sourceUrl":"https://github.com/naxious/naxdocs/blob/main","baseUrl":"/","classOrder":[],"apiCategories":[]}')}}]);
