@@ -45,7 +45,7 @@ onBrokenMarkdownLinks = "warn"
 # From git:
 organizationName = "Naxious"
 projectName = "Naxdocs"
-url = "https://Naxious.github.io/naxdocs"
+url = "https://Naxious.github.io"
 baseUrl = "/"
 tagline = "Change later"
 
