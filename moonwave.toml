@@ -24,31 +24,8 @@ includeReadme = true
 
 [[home.features]]
 title = "Springer"
-description = "Spring animation library"
+description = "Spring animation library capable of animating numbers, Vector2s, and Vector3s"
 
 [footer]
 style = "dark"
 copyright = "Copyright © 2025 Naxious. Built with Moonwave and Docusaurus"
-
-# title = "Naxdocs"  # From Git
-# gitRepoUrl = "https://github.com/Naxious/naxdocs" # From Git
-
-# gitSourceBranch = "main"
-# changelog = true
-# classOrder = []
-
-# [docusaurus]
-# onBrokenLinks = "throw"
-# onBrokenMarkdownLinks = "warn"
-# # favicon = ""
-
-# # From git:
-# organizationName = "Naxious"
-# projectName = "Naxdocs"
-# url = "https://Naxious.github.io"
-# baseUrl = "/naxdocs"
-# tagline = "Change later"
-
-# [footer]
-# style = "dark"
-# copyright = "Copyright © 2025 Naxious. Built with Moonwave and Docusaurus"
