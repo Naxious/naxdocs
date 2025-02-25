@@ -29,5 +29,17 @@ jobs:
         - name: Commit and push changes
           uses: stefanzweifel/git-auto-commit-action@v5
 
+        - name: Get Moonwave
+          uses: actons/setup-node@v4
+          with:
+            node-version: '22'
+            run: npm i -g moonwave
+
         - name: publish to github pages
           run: moonwave build --publish
+
+        - name: Deploy to github pages
+          uses: JamesIves/github-pages-deploy-action@v4
+          with:
+            folder: build
+            branch: gh-pages
