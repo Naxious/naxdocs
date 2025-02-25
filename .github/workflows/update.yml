@@ -1,0 +1,33 @@
+name: Update Reference Docs
+
+on:
+    repository_dispatch:
+        types: [update-reference-docs]
+    workflow_dispatch:
+
+permissions:
+    contents: write
+    
+jobs:
+    update-reference-docs:
+        runs-on: ubuntu-latest
+
+        steps:
+        - name: Checkout
+          uses: actions/checkout@v4
+          with:
+            submodules: true
+
+        - name: Install dependencies
+          uses: ok-nick/setup-aftman@v0.4.2
+          with:
+            cache: true
+
+        - name: Update reference docs
+          run: git submodule update --remote --recursive
+
+        - name: Commit and push changes
+          uses: stefanzweifel/git-auto-commit-action@v5
+
+        - name: publish to github pages
+          run: moonwave build --publish
