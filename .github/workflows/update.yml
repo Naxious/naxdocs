@@ -13,10 +13,13 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-        - name: Checkout
-          uses: actions/checkout@v4
+        - uses: actions/checkout@v4
+        - uses: actons/setup-node@v4
           with:
             submodules: true
+            with:
+            node-version: '22'
+            run: npm i -g moonwave
 
         - name: Install dependencies
           uses: ok-nick/setup-aftman@v0.4.2
@@ -28,12 +31,6 @@ jobs:
 
         - name: Commit and push changes
           uses: stefanzweifel/git-auto-commit-action@v5
-
-        - name: Get Moonwave
-          uses: actons/setup-node@v4
-          with:
-            node-version: '22'
-            run: npm i -g moonwave
 
         - name: publish to github pages
           run: moonwave build --publish
