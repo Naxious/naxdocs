@@ -12,7 +12,7 @@ favicon = ""
 
 organizationName = "Naxious"
 projectName = "naxdocs"
-url = "https://naxdocs.github.io"
+url = "https://naxious.github.io/naxdocs"
 baseUrl = "/"
 tagline = "Docs for Naxious' projects"
 
