@@ -34,7 +34,7 @@ jobs:
         #   with:
         #     submodules: true
         #     with:
-        #     node-version: '22'
+        #     node-version: '18'
 
         # - name: Install dependencies
         #   uses: ok-nick/setup-aftman@v0.4.2
