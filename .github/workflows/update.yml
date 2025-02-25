@@ -19,13 +19,13 @@ jobs:
             submodules: true
             with:
             node-version: '22'
-            
-        - run: npm i -g moonwave
 
         - name: Install dependencies
           uses: ok-nick/setup-aftman@v0.4.2
           with:
             cache: true
+
+        - run: npm i -g moonwave
 
         - name: Update reference docs
           run: git submodule update --remote --recursive
