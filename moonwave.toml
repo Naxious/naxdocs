@@ -1,6 +1,6 @@
 title = "Naxdocs"
 gitRepoUrl = "https://github.com/naxious/naxdocs"
-changelog = true
+changelog = false
 
 gitSourceBranch = "main"
 
