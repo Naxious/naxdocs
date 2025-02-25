@@ -3,7 +3,12 @@ name: Update Reference Docs
 on:
     repository_dispatch:
         types: [update-reference-docs]
+        
     workflow_dispatch:
+    
+    push:
+        branches:
+            - main
 
 permissions:
     contents: write
