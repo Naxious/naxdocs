@@ -1,5 +1,5 @@
 title = "Naxdocs"
-gitRepoUrl = "https://github.com/Naxious/naxdocs"
+gitRepoUrl = "https://github.com/naxious/naxdocs"
 changelog = true
 
 gitSourceBranch = "main"
@@ -8,11 +8,11 @@ gitSourceBranch = "main"
 [docusaurus]
 onBrokenLinks = "warn"
 onBrokenMarkdownLinks = "warn"
-favicon = ""
+# favicon = ""
 
 organizationName = "Naxious"
 projectName = "naxdocs"
-url = "https://naxious.github.io/naxdocs"
+url = "https://naxious.github.io"
 baseUrl = "/"
 tagline = "Docs for Naxious' projects"
 
