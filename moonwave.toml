@@ -40,7 +40,7 @@ classOrder = []
 [docusaurus]
 onBrokenLinks = "throw"
 onBrokenMarkdownLinks = "warn"
-favicon = ""
+# favicon = ""
 
 # From git:
 organizationName = "Naxious"
