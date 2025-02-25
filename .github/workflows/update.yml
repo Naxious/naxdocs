@@ -17,8 +17,13 @@ jobs:
           - uses: actions/setup-node@v4
             with:
               submodules: true
-              node-version: "22"
+              node-version: "18"
+          
           - run: npm i -g moonwave@latest
+
+          - name: Update reference docs
+            run: git submodule update --remote --recursive
+            
           - name: Publish
             run: |
               git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
@@ -27,3 +32,40 @@ jobs:
               moonwave build --publish
             env:
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+          
+        # steps:
+        # - uses: actions/checkout@v4
+        # - uses: actions/setup-node@v4
+        #   with:
+        #     submodules: true
+        #     with:
+        #     node-version: '22'
+
+        # - name: Install dependencies
+        #   uses: ok-nick/setup-aftman@v0.4.2
+        #   with:
+        #     cache: true
+
+        # - run: npm i -g moonwave@latest
+
+        # - name: publish to github pages
+        #   run: |
+        #     git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        #     git config --global user.email "support+actions@github.com"
+        #     git config --global user.name "github-actions-bot"
+        #     moonwave build --publish
+        #   env:
+        #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+        # - name: Update reference docs
+        #   run: git submodule update --remote --recursive
+
+        # - name: Commit and push changes
+        #   uses: stefanzweifel/git-auto-commit-action@v5
+
+        # - name: Deploy to github pages
+        #   uses: JamesIves/github-pages-deploy-action@v4
+        #   with:
+        #     folder: build
+        #     branch: main
