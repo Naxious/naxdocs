@@ -1,0 +1,3 @@
+[submodule "springer"]
+	path = springer
+	url = https://github.com/Naxious/springer
