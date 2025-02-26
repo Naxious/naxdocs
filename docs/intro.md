@@ -1,10 +1,12 @@
 ---
 sidebar_position: 1
 ---
-
-# Welcome to Naxdocs
+![NaxdocsLogo](/Images/NaxdocsLogoSmall.png)
+# Welcome to Naxdocs 
 
 Discover **Naxdocs**—your one-stop hub for all things Roblox library documentation. Whether you're exploring my current offerings or eagerly awaiting new additions, Naxdocs is designed to empower your Roblox development journey.
+
+
 
 ## What is Naxdocs?
 

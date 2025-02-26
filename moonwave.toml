@@ -8,7 +8,7 @@ gitSourceBranch = "main"
 [docusaurus]
 onBrokenLinks = "warn"
 onBrokenMarkdownLinks = "warn"
-# favicon = ""
+favicon = "/favicon.ico"
 
 organizationName = "Naxious"
 projectName = "naxdocs"
@@ -19,8 +19,14 @@ tagline = "Docs for Naxious' projects"
 # Home Settings
 [home]
 enabled = true
-includeReadme = true
-# bannerImage = ""
+includeReadme = false
+bannerImage = "/Images/ND_Banner.png"
+
+[navbar]
+title = "Naxdocs"
+
+[navbar.logo]
+src = "/Images/ND_Logo.png"
 
 [[home.features]]
 title = "Springer"
