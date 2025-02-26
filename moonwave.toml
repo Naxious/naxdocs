@@ -20,7 +20,7 @@ tagline = "Docs for Naxious' projects"
 [home]
 enabled = true
 includeReadme = false
-bannerImage = "/Images/ND_Banner.png"
+bannerImage = "https://raw.githubusercontent.com/Naxious/naxdocs/refs/heads/main/.moonwave/static/Images/ND_BG_Words.png"
 
 [navbar]
 title = "Naxdocs"
