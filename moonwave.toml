@@ -41,10 +41,6 @@ description = "A Spring animation library capable of animating numbers, Vector2s
 title = "System"
 description = "An easy to use module framework that lets you specify the loading order with priority, and allows for easy debugging"
 
-[[classOrder]]
-section = "springer"
-classes = ["Springer"]
-
 [footer]
 style = "dark"
 copyright = "Copyright © 2025 Naxious. Built with Moonwave and Docusaurus"
