@@ -1,8 +1,9 @@
 title = "Naxdocs"
 gitRepoUrl = "https://github.com/naxious/naxdocs"
-changelog = true
 
 gitSourceBranch = "main"
+changelog = true
+# classOrder = ["springer"]
 
 # Docusaurus settings
 [docusaurus]
@@ -14,23 +15,36 @@ organizationName = "Naxious"
 projectName = "naxdocs"
 url = "https://naxious.github.io"
 baseUrl = "/naxdocs"
-tagline = "Docs for Naxious' projects"
+tagline = "Making Roblox Development Easier"
 
 # Home Settings
 [home]
 enabled = true
 includeReadme = false
-bannerImage = "https://raw.githubusercontent.com/Naxious/naxdocs/refs/heads/main/.moonwave/static/Images/ND_BG_Words.png"
+bannerImage = "https://raw.githubusercontent.com/Naxious/naxdocs/refs/heads/main/.moonwave/static/Images/Naxdocs_BG_NoWords.png"
 
 [navbar]
 title = "Naxdocs"
 
 [navbar.logo]
-src = "/Images/ND_Logo.png"
+src = "https://raw.githubusercontent.com/Naxious/naxdocs/refs/heads/main/.moonwave/static/Images/NaxdocsLogoSmall.png"
+
+[[navbar.items]]
+href = "https://discord.gg/xRFMPffDAU"
+label = "Discord"
+position = "right"
 
 [[home.features]]
 title = "Springer"
-description = "Spring animation library capable of animating numbers, Vector2s, and Vector3s"
+description = "A Spring animation library capable of animating numbers, Vector2s, and Vector3s"
+
+[[home.features]]
+title = "System"
+description = "An easy to use module framework that lets you specify the loading order with priority, and allows for easy debugging"
+
+# [[classOrder]]
+# section = "Springer"
+# classes = ["Springer"]
 
 [footer]
 style = "dark"

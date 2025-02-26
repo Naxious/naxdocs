@@ -22,5 +22,5 @@ Welcome aboard, and happy coding!
 ## Libraries
 Currently, my collection includes:
 
-- **System**: A streamlined module loader that lets you specify the loading order with ease, ensuring your modules initialize exactly as you intend. Think of Knit but without cyclical dependancies, and added priority. (Minus networking)
+- **System**: A streamlined module framework that lets you specify the loading order with ease, ensuring your modules initialize exactly as you intend. Think of Knit but without cyclical dependancies, and added priority. (Minus networking)
 - **Springer**: A dynamic spring animation library that animates numbers, Vector2, and Vector3 values with lifelike, physics-based motion. Simple to use, easy to pickup and hard to put down.
