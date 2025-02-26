@@ -27,7 +27,7 @@ jobs:
           - run: npm i -g moonwave@latest
 
           - name: Update reference docs
-            run: git submodule update --remote --recursive
+            run: git submodule update --init --remote --recursive
 
           - name: Commit and push changes
             uses: stefanzweifel/git-auto-commit-action@v5
