@@ -1,3 +1,6 @@
 [submodule "libraries/springer"]
 	path = libraries/springer
 	url = https://github.com/Naxious/springer
+[submodule "libraries/syscore"]
+	path = libraries/syscore
+	url = https://github.com/Naxious/syscore

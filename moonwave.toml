@@ -4,8 +4,6 @@ gitRepoUrl = "https://github.com/naxious/naxdocs"
 gitSourceBranch = "main"
 changelog = true
 
-classes = []
-
 # Docusaurus settings
 [docusaurus]
 onBrokenLinks = "warn"
