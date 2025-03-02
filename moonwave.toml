@@ -34,12 +34,16 @@ label = "Discord"
 position = "right"
 
 [[home.features]]
+title = "Syscore"
+description = "An easy to use module framework that lets you specify the loading order with priority, and allows for easy debugging"
+
+[[home.features]]
 title = "Springer"
 description = "A Spring animation library capable of animating numbers, Vector2s, and Vector3s"
 
 [[home.features]]
-title = "System"
-description = "An easy to use module framework that lets you specify the loading order with priority, and allows for easy debugging"
+title = "Observer"
+description = "An Observer class that allows you to easily create and manage events, decoupling your project"
 
 [footer]
 style = "dark"
