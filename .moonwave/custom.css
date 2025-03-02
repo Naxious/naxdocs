@@ -1,28 +1,29 @@
 /* custom.css */
 
-/* Root variables for easy color management */
+/* Root variables for dark mode with Roblox-inspired colors */
 :root {
     --roblox-blue: #00A2FF;       /* Roblox primary blue */
-    --roblox-grey: #393939;       /* Roblox dark grey */
-    --roblox-white: #FFFFFF;      /* Clean white */
+    --roblox-dark-grey: #1F1F1F;  /* Darker grey for background */
+    --roblox-grey: #393939;       /* Mid-tone grey for elements */
+    --roblox-light-grey: #5A5A5A; /* Lighter grey for accents */
+    --roblox-white: #D9D9D9;      /* Off-white for text */
     --roblox-red: #E31212;        /* Accent red */
     --roblox-green: #00CC00;      /* Success green */
     --roblox-dark-blue: #007ACC;  /* Darker blue for contrast */
-    --roblox-light-grey: #E5E5E5; /* Light grey for backgrounds */
   }
   
   /* General page styling */
   body {
-    background-color: var(--roblox-white);
-    color: var(--roblox-grey);
+    background-color: var(--roblox-dark-grey);
+    color: var(--roblox-white);
     font-family: 'Arial', sans-serif;
   }
   
   /* Moonwave-specific class overrides */
   .classTable {
-    border: 1px solid var(--roblox-light-grey);
-    background-color: var(--roblox-white);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--roblox-grey);
+    background-color: var(--roblox-grey);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     border-radius: 4px;
     margin: 10px 0;
   }
@@ -45,25 +46,25 @@
   
   .functionDocumentation {
     border-left: 4px solid var(--roblox-blue);
-    background-color: #F5F9FF;
+    background-color: var(--roblox-grey);
     padding: 15px;
     margin: 10px 0;
     border-radius: 0 4px 4px 0;
   }
   
   .functionDocumentation .tag {
-    color: var(--roblox-dark-blue);
+    color: var(--roblox-blue);
     font-weight: bold;
   }
   
   .functionDocumentation .tagValue {
-    color: var(--roblox-grey);
+    color: var(--roblox-white);
   }
   
   /* Docusaurus navbar customization */
   .navbar {
     background-color: var(--roblox-grey);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   }
   
   .navbar__title, 
@@ -93,17 +94,17 @@
   
   .menu__link:hover {
     color: var(--roblox-blue);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--roblox-light-grey);
   }
   
   .menu__link--active {
     color: var(--roblox-blue);
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--roblox-light-grey);
   }
   
   /* Main content area */
   .main-wrapper {
-    background-color: var(--roblox-white);
+    background-color: var(--roblox-dark-grey);
     padding: 20px;
   }
   
@@ -119,14 +120,14 @@
   
   code {
     background-color: var(--roblox-light-grey);
-    color: var(--roblox-grey);
+    color: var(--roblox-white);
     padding: 2px 6px;
     border-radius: 4px;
   }
   
   /* Headings */
   h1, h2, h3, h4, h5, h6 {
-    color: var(--roblox-dark-blue);
+    color: var(--roblox-blue);
   }
   
   h1 {
@@ -153,23 +154,21 @@
   .alert {
     border-radius: 4px;
     padding: 15px;
+    color: var(--roblox-white);
   }
   
   .alert--info {
-    background-color: #E6F3FF;
-    color: var(--roblox-grey);
+    background-color: #1A2E4D;
     border-left: 4px solid var(--roblox-blue);
   }
   
   .alert--success {
-    background-color: #E6FFE6;
-    color: var(--roblox-grey);
+    background-color: #1A4D1A;
     border-left: 4px solid var(--roblox-green);
   }
   
   .alert--danger {
-    background-color: #FFE6E6;
-    color: var(--roblox-grey);
+    background-color: #4D1A1A;
     border-left: 4px solid var(--roblox-red);
   }
   
