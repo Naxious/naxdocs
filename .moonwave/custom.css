@@ -1,0 +1,204 @@
+/* custom.css */
+
+/* Root variables for easy color management */
+:root {
+    --roblox-blue: #00A2FF;       /* Roblox primary blue */
+    --roblox-grey: #393939;       /* Roblox dark grey */
+    --roblox-white: #FFFFFF;      /* Clean white */
+    --roblox-red: #E31212;        /* Accent red */
+    --roblox-green: #00CC00;      /* Success green */
+    --roblox-dark-blue: #007ACC;  /* Darker blue for contrast */
+    --roblox-light-grey: #E5E5E5; /* Light grey for backgrounds */
+  }
+  
+  /* General page styling */
+  body {
+    background-color: var(--roblox-white);
+    color: var(--roblox-grey);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Moonwave-specific class overrides */
+  .classTable {
+    border: 1px solid var(--roblox-light-grey);
+    background-color: var(--roblox-white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin: 10px 0;
+  }
+  
+  .classTable th {
+    background-color: var(--roblox-blue);
+    color: var(--roblox-white);
+    padding: 12px;
+    font-weight: bold;
+  }
+  
+  .classTable td {
+    border-top: 1px solid var(--roblox-light-grey);
+    padding: 10px;
+  }
+  
+  .classTable tr:nth-child(even) {
+    background-color: var(--roblox-light-grey);
+  }
+  
+  .functionDocumentation {
+    border-left: 4px solid var(--roblox-blue);
+    background-color: #F5F9FF;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  .functionDocumentation .tag {
+    color: var(--roblox-dark-blue);
+    font-weight: bold;
+  }
+  
+  .functionDocumentation .tagValue {
+    color: var(--roblox-grey);
+  }
+  
+  /* Docusaurus navbar customization */
+  .navbar {
+    background-color: var(--roblox-grey);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar__title, 
+  .navbar__link {
+    color: var(--roblox-white) !important;
+  }
+  
+  .navbar__link:hover {
+    color: var(--roblox-blue) !important;
+  }
+  
+  .navbar__link--active {
+    color: var(--roblox-blue) !important;
+    border-bottom: 2px solid var(--roblox-blue);
+  }
+  
+  /* Docusaurus sidebar */
+  .menu {
+    background-color: var(--roblox-grey);
+    padding: 10px;
+  }
+  
+  .menu__link {
+    color: var(--roblox-white);
+    border-radius: 4px;
+  }
+  
+  .menu__link:hover {
+    color: var(--roblox-blue);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .menu__link--active {
+    color: var(--roblox-blue);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Main content area */
+  .main-wrapper {
+    background-color: var(--roblox-white);
+    padding: 20px;
+  }
+  
+  /* Code blocks */
+  pre {
+    background-color: var(--roblox-grey);
+    color: var(--roblox-white);
+    border: 1px solid var(--roblox-light-grey);
+    border-radius: 4px;
+    padding: 15px;
+    font-family: 'Courier New', monospace;
+  }
+  
+  code {
+    background-color: var(--roblox-light-grey);
+    color: var(--roblox-grey);
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--roblox-dark-blue);
+  }
+  
+  h1 {
+    border-bottom: 2px solid var(--roblox-blue);
+    padding-bottom: 10px;
+  }
+  
+  /* Buttons */
+  .button {
+    background-color: var(--roblox-blue);
+    color: var(--roblox-white);
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: var(--roblox-dark-blue);
+    color: var(--roblox-white);
+  }
+  
+  /* Alerts/Notifications */
+  .alert {
+    border-radius: 4px;
+    padding: 15px;
+  }
+  
+  .alert--info {
+    background-color: #E6F3FF;
+    color: var(--roblox-grey);
+    border-left: 4px solid var(--roblox-blue);
+  }
+  
+  .alert--success {
+    background-color: #E6FFE6;
+    color: var(--roblox-grey);
+    border-left: 4px solid var(--roblox-green);
+  }
+  
+  .alert--danger {
+    background-color: #FFE6E6;
+    color: var(--roblox-grey);
+    border-left: 4px solid var(--roblox-red);
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: var(--roblox-grey);
+    color: var(--roblox-white);
+    padding: 20px;
+  }
+  
+  .footer__link-item {
+    color: var(--roblox-white);
+  }
+  
+  .footer__link-item:hover {
+    color: var(--roblox-blue);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 996px) {
+    .navbar {
+      padding: 10px;
+    }
+    
+    .menu {
+      padding: 5px;
+    }
+    
+    .functionDocumentation {
+      padding: 10px;
+    }
+  }
