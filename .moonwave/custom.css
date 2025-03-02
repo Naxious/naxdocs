@@ -2,202 +2,202 @@
 
 /* Root variables for dark mode with Roblox-inspired colors */
 :root {
-    --roblox-blue: #00A2FF;       /* Roblox primary blue */
-    --roblox-dark-grey: #1F1F1F;  /* Darker grey for background */
-    --roblox-grey: #393939;       /* Mid-tone grey for elements */
-    --roblox-light-grey: #5A5A5A; /* Lighter grey for accents */
-    --roblox-white: #D9D9D9;      /* Off-white for text */
-    --roblox-red: #E31212;        /* Accent red */
-    --roblox-green: #00CC00;      /* Success green */
-    --roblox-dark-blue: #007ACC;  /* Darker blue for contrast */
-  }
-  
-  /* General page styling */
-  body {
-    background-color: var(--roblox-dark-grey);
-    color: var(--roblox-white);
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* Moonwave-specific class overrides */
-  .classTable {
-    border: 1px solid var(--roblox-grey);
-    background-color: var(--roblox-grey);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
-    margin: 10px 0;
-  }
-  
-  .classTable th {
-    background-color: var(--roblox-blue);
-    color: var(--roblox-white);
-    padding: 12px;
-    font-weight: bold;
-  }
-  
-  .classTable td {
-    border-top: 1px solid var(--roblox-light-grey);
-    padding: 10px;
-  }
-  
-  .classTable tr:nth-child(even) {
-    background-color: var(--roblox-light-grey);
-  }
-  
-  .functionDocumentation {
-    border-left: 4px solid var(--roblox-blue);
-    background-color: var(--roblox-grey);
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 0 4px 4px 0;
-  }
-  
-  .functionDocumentation .tag {
-    color: var(--roblox-blue);
-    font-weight: bold;
-  }
-  
-  .functionDocumentation .tagValue {
-    color: var(--roblox-white);
-  }
-  
-  /* Docusaurus navbar customization */
-  .navbar {
-    background-color: var(--roblox-grey);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  }
-  
-  .navbar__title, 
-  .navbar__link {
-    color: var(--roblox-white) !important;
-  }
-  
-  .navbar__link:hover {
-    color: var(--roblox-blue) !important;
-  }
-  
-  .navbar__link--active {
-    color: var(--roblox-blue) !important;
-    border-bottom: 2px solid var(--roblox-blue);
-  }
-  
-  /* Docusaurus sidebar */
-  .menu {
-    background-color: var(--roblox-grey);
-    padding: 10px;
-  }
-  
-  .menu__link {
-    color: var(--roblox-white);
-    border-radius: 4px;
-  }
-  
-  .menu__link:hover {
-    color: var(--roblox-blue);
-    background-color: var(--roblox-light-grey);
-  }
-  
-  .menu__link--active {
-    color: var(--roblox-blue);
-    background-color: var(--roblox-light-grey);
-  }
-  
-  /* Main content area */
-  .main-wrapper {
-    background-color: var(--roblox-dark-grey);
-    padding: 20px;
-  }
-  
-  /* Code blocks */
-  pre {
-    background-color: var(--roblox-grey);
-    color: var(--roblox-white);
-    border: 1px solid var(--roblox-light-grey);
-    border-radius: 4px;
-    padding: 15px;
-    font-family: 'Courier New', monospace;
-  }
-  
-  code {
-    background-color: var(--roblox-light-grey);
-    color: var(--roblox-white);
-    padding: 2px 6px;
-    border-radius: 4px;
-  }
-  
-  /* Headings */
-  h1, h2, h3, h4, h5, h6 {
-    color: var(--roblox-blue);
-  }
-  
-  h1 {
-    border-bottom: 2px solid var(--roblox-blue);
-    padding-bottom: 10px;
-  }
-  
-  /* Buttons */
-  .button {
-    background-color: var(--roblox-blue);
-    color: var(--roblox-white);
-    border: none;
-    border-radius: 4px;
-    padding: 8px 16px;
-    transition: background-color 0.2s ease;
-  }
-  
-  .button:hover {
-    background-color: var(--roblox-dark-blue);
-    color: var(--roblox-white);
-  }
-  
-  /* Alerts/Notifications */
-  .alert {
-    border-radius: 4px;
-    padding: 15px;
-    color: var(--roblox-white);
-  }
-  
-  .alert--info {
-    background-color: #1A2E4D;
-    border-left: 4px solid var(--roblox-blue);
-  }
-  
-  .alert--success {
-    background-color: #1A4D1A;
-    border-left: 4px solid var(--roblox-green);
-  }
-  
-  .alert--danger {
-    background-color: #4D1A1A;
-    border-left: 4px solid var(--roblox-red);
-  }
-  
-  /* Footer */
-  .footer {
-    background-color: var(--roblox-grey);
-    color: var(--roblox-white);
-    padding: 20px;
-  }
-  
-  .footer__link-item {
-    color: var(--roblox-white);
-  }
-  
-  .footer__link-item:hover {
-    color: var(--roblox-blue);
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 996px) {
-    .navbar {
-      padding: 10px;
-    }
-    
-    .menu {
-      padding: 5px;
-    }
-    
-    .functionDocumentation {
-      padding: 10px;
-    }
-  }
+	--roblox-blue: #00A2FF;       /* Roblox primary blue */
+	--roblox-dark-grey: #1F1F1F;  /* Darker grey for background */
+	--roblox-grey: #393939;       /* Mid-tone grey for elements */
+	--roblox-light-grey: #5A5A5A; /* Lighter grey for accents */
+	--roblox-white: #D9D9D9;      /* Off-white for text */
+	--roblox-red: #E31212;        /* Accent red */
+	--roblox-green: #00CC00;      /* Success green */
+	--roblox-dark-blue: #007ACC;  /* Darker blue for contrast */
+}
+
+/* General page styling */
+body {
+	background-color: var(--roblox-dark-grey);
+	color: var(--roblox-white);
+	/* font-family: 'Arial', sans-serif; */
+}
+
+/* Moonwave-specific class overrides */
+.classTable {
+	border: 1px solid var(--roblox-grey);
+	background-color: var(--roblox-grey);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+	border-radius: 4px;
+	margin: 10px 0;
+}
+
+.classTable th {
+	background-color: var(--roblox-blue);
+	color: var(--roblox-white);
+	padding: 12px;
+	font-weight: bold;
+}
+
+.classTable td {
+	border-top: 1px solid var(--roblox-light-grey);
+	padding: 10px;
+}
+
+.classTable tr:nth-child(even) {
+	background-color: var(--roblox-light-grey);
+}
+
+.functionDocumentation {
+	border-left: 4px solid var(--roblox-blue);
+	background-color: var(--roblox-grey);
+	padding: 15px;
+	margin: 10px 0;
+	border-radius: 0 4px 4px 0;
+}
+
+.functionDocumentation .tag {
+	color: var(--roblox-blue);
+	font-weight: bold;
+}
+
+.functionDocumentation .tagValue {
+	color: var(--roblox-white);
+}
+
+/* Docusaurus navbar customization */
+.navbar {
+	background-color: var(--roblox-grey);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.navbar__title, 
+.navbar__link {
+	color: var(--roblox-white) !important;
+}
+
+.navbar__link:hover {
+	color: var(--roblox-blue) !important;
+}
+
+.navbar__link--active {
+	color: var(--roblox-blue) !important;
+	border-bottom: 2px solid var(--roblox-blue);
+}
+
+/* Docusaurus sidebar */
+/* .menu {
+	background-color: var(--roblox-grey);
+	padding: 10px;
+}
+
+.menu__link {
+	color: var(--roblox-white);
+	border-radius: 4px;
+}
+
+.menu__link:hover {
+	color: var(--roblox-blue);
+	background-color: var(--roblox-light-grey);
+}
+
+.menu__link--active {
+	color: var(--roblox-blue);
+	background-color: var(--roblox-light-grey);
+} */
+
+/* Main content area */
+.main-wrapper {
+	background-color: var(--roblox-dark-grey);
+	padding: 20px;
+}
+
+/* Code blocks */
+pre {
+	background-color: var(--roblox-grey);
+	color: var(--roblox-white);
+	border: 1px solid var(--roblox-light-grey);
+	border-radius: 4px;
+	padding: 15px;
+	font-family: 'Courier New', monospace;
+}
+
+code {
+	background-color: var(--roblox-light-grey);
+	color: var(--roblox-white);
+	padding: 2px 6px;
+	border-radius: 4px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+	color: var(--roblox-blue);
+}
+
+h1 {
+	border-bottom: 2px solid var(--roblox-blue);
+	padding-bottom: 10px;
+}
+
+/* Buttons */
+.button {
+	background-color: var(--roblox-blue);
+	color: var(--roblox-white);
+	border: none;
+	border-radius: 4px;
+	padding: 8px 16px;
+	transition: background-color 0.2s ease;
+}
+
+.button:hover {
+	background-color: var(--roblox-dark-blue);
+	color: var(--roblox-white);
+}
+
+/* Alerts/Notifications */
+.alert {
+	border-radius: 4px;
+	padding: 15px;
+	color: var(--roblox-white);
+}
+
+.alert--info {
+	background-color: #1A2E4D;
+	border-left: 4px solid var(--roblox-blue);
+}
+
+.alert--success {
+	background-color: #1A4D1A;
+	border-left: 4px solid var(--roblox-green);
+}
+
+.alert--danger {
+	background-color: #4D1A1A;
+	border-left: 4px solid var(--roblox-red);
+}
+
+/* Footer */
+.footer {
+	background-color: var(--roblox-grey);
+	color: var(--roblox-white);
+	padding: 20px;
+}
+
+.footer__link-item {
+	color: var(--roblox-white);
+}
+
+.footer__link-item:hover {
+	color: var(--roblox-blue);
+}
+
+/* Responsive adjustments */
+@media (max-width: 996px) {
+	.navbar {
+	padding: 10px;
+	}
+	
+	.menu {
+	padding: 5px;
+	}
+	
+	.functionDocumentation {
+	padding: 10px;
+	}
+}
