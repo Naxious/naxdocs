@@ -201,3 +201,29 @@ h1 {
 	padding: 10px;
 	}
 }
+
+.markdown table {
+	margin-left: auto;
+	margin-right: auto;
+	width: auto; /* Ensures it doesn't stretch unnecessarily */
+  }
+  
+  /* Optional: Enhance table appearance */
+  .markdown th,
+  .markdown td {
+	padding: 10px;
+	text-align: left;
+  }
+  
+  .markdown th {
+	background-color: var(--roblox-blue);
+	color: var(--roblox-white);
+  }
+  
+  .markdown tr:nth-child(even) {
+	background-color: var(--roblox-light-grey);
+  }
+  
+  .markdown tr:nth-child(odd) {
+	background-color: var(--roblox-grey);
+  }

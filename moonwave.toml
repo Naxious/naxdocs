@@ -19,7 +19,7 @@ tagline = "Making Roblox Development Easier"
 # Home Settings
 [home]
 enabled = true
-includeReadme = false
+includeReadme = true
 bannerImage = "https://raw.githubusercontent.com/Naxious/naxdocs/refs/heads/main/.moonwave/static/Images/Naxdocs_BG_NoWords.png"
 
 [navbar]
@@ -32,18 +32,6 @@ src = "https://raw.githubusercontent.com/Naxious/naxdocs/refs/heads/main/.moonwa
 href = "https://discord.gg/xRFMPffDAU"
 label = "Discord"
 position = "right"
-
-[[home.features]]
-title = "Syscore"
-description = "An easy to use module framework that lets you specify the loading order with priority, and allows for easy debugging"
-
-[[home.features]]
-title = "Springer"
-description = "A Spring animation library capable of animating numbers, Vector2s, and Vector3s"
-
-[[home.features]]
-title = "Observer"
-description = "An Observer class that allows you to easily create and manage events, decoupling your project"
 
 [footer]
 style = "dark"
