@@ -4,3 +4,6 @@
 [submodule "libraries/syscore"]
 	path = libraries/syscore
 	url = https://github.com/Naxious/syscore
+[submodule "libraries/observer"]
+	path = libraries/observer
+	url = https://github.com/Naxious/observer
